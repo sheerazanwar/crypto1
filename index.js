@@ -31,6 +31,10 @@ app.use(function (err,req,res,next)
   res.status(422).send({error: err.message});
 });
 
+app.get('/',function(req,res){
+  res.status(200).send({done:"Done with it"});
+})
+
 process.env.jwtsecret = '$2a$06$GXmQiERBvYRGD91bIJLWRO2m4WGUpj7IRuSuve3pZ3B5rRtLIzm2G';
 
 app.listen(process.env.port||3000,function ()
