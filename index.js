@@ -37,7 +37,7 @@ app.get('/',function(req,res){
 
 process.env.jwtsecret = '$2a$06$GXmQiERBvYRGD91bIJLWRO2m4WGUpj7IRuSuve3pZ3B5rRtLIzm2G';
 
-app.listen(process.env.port||3000,function ()
+app.listen(process.env.PORT||3000,function ()
 {
   console.log("*you are listeninig for request*");
 });
